@@ -18,9 +18,9 @@ body {
 
     box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
 
-    margin: 25px auto;
+    margin-bottom: 25px;
 
-    height: 90vh;
+    margin-top: 25px;
 
     padding: 25px;
 }
@@ -45,6 +45,10 @@ body {
     color: #6C63FF;
 }
 
+#form-container form {
+    padding-bottom: 50px;
+}
+
 #form-container .form-control {
     border: none;
 
@@ -65,22 +69,27 @@ body {
     color: #222;
 }
 
-#form-container input[type="submit"] {
+#form-container input[type="submit"],
+#form-container input[type="checkbox"]:checked {
     background-color: #6C63FF;
 
     border-color: #6C63FF;
 }
 
 .btn.btn-primary {
+    margin-top: 10px;
+
     width: 100%;
 }
 
 /* imagem */
-.row.align-items-center {
+.login-container, .register-container {
     align-content: center;
 
     height: 100%;
+}
 
+.login-container {
     padding: 75px 0;
 }
 
@@ -108,8 +117,12 @@ body {
         display: block;
     }
 
-    #form-container form {
-        padding-bottom: 30px;
+    #form-container {
+        padding: 40px;
+    }
+
+    .btn.btn-primary {
+        margin: 10px 0;
     }
 
     .row.align-items-center {
